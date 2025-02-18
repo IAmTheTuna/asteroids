@@ -8,7 +8,7 @@ class Player(CircleShape):
         self.rotation = 0
     # defining the draw method in order to draw the player on the screen
     def draw(self, screen):
-        pygame.draw.polygon(screen, "white", self.triangle(), 2)
+        pygame.draw.polygon(screen, "purple", self.triangle(), 2)
     # defining the player shape as a triangle
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
